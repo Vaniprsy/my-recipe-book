@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feedback — My Recipe Book</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-feedback">
+  <header class="site-header">
+    <div class="brand">🍲 <span>My Recipe Book</span></div>
+  </header>
+
+  <main class="container">
+    <article class="box feedback-box">
+      <h2>Feedback Section</h2>
+
+      <div class="recipe-row">
+        <div class="thumb"></div>
+        <div class="recipe-info">
+          <h3 id="fbRecipeName">Recipe Name</h3>
+          <p class="muted">Short description or details will appear here.</p>
+        </div>
+      </div>
+
+      <label class="label">Comments</label>
+      <div class="comment-area">
+        <textarea id="commentDisplay" rows="3" readonly placeholder="Previous comments (demo)"></textarea>
+      </div>
+
+      <label class="label">Add your Feedback</label>
+      <form id="feedbackForm" class="form-plain">
+        <input id="recipeTitle" type="text" placeholder="Recipe Name" required>
+        <textarea id="feedback" rows="4" placeholder="Write your feedback..." required></textarea>
+        <div class="form-row">
+          <button class="btn primary" type="submit">SEND</button>
+          <button class="btn ghost" type="reset">CLEAR</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <footer class="footer small">Thanks for helping the community grow! 💬</footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

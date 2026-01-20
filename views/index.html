@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Recipe Book — Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-home">
+  <header class="site-header">
+    <div class="brand">🍲 <span>My Recipe Book</span></div>
+  </header>
+
+  <main class="container">
+    <div style="max-width:900px;margin:40px auto;display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+      <div style="flex:1;background:#fff;border-radius:12px;padding:22px;box-shadow:0 8px 20px rgba(0,0,0,0.06)">
+        <h2>Welcome</h2>
+        <p>Share and explore recipes — look aesthetic and simple.</p>
+      </div>
+      <div style="width:360px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 8px 20px rgba(0,0,0,0.06)">
+        <h3>Login</h3>
+        <form id="loginForm">
+          <label>Name</label><br>
+          <input id="username" required style="padding:10px;border-radius:10px;border:1px solid #eee;width:100%"><br><br>
+          <label>Email (optional)</label><br>
+          <input id="email" style="padding:10px;border-radius:10px;border:1px solid #eee;width:100%"><br><br>
+          <button class="side-btn" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© 2025 My Recipe Book</footer>
+  <script src="/script.js"></script>
+</body>
+</html>

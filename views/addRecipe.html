@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Add Recipe — My Recipe Book</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-add">
+  <header class="site-header"><div class="brand">🍲 <span>My Recipe Book</span></div></header>
+
+  <main class="wide-box">
+    <h2>Add Recipe</h2>
+    <form id="addRecipeForm">
+      <label>Recipe name</label><br>
+      <input id="rname" required><br><br>
+
+      <label>Category</label><br>
+      <input id="rcat"><br><br>
+
+      <label>Ingredients (comma separated)</label><br>
+      <textarea id="ring"></textarea><br>
+
+      <label>Description</label><br>
+      <textarea id="rdesc"></textarea><br>
+
+      <label>Upload image (optional)</label><br>
+      <input type="file" id="rimage" accept="image/*"><br><br>
+
+      <label>Or image URL (optional)</label><br>
+      <input id="rimageUrl" placeholder="https://..."><br><br>
+
+      <button class="side-btn" type="submit">Add Recipe</button>
+    </form>
+  </main>
+
+  <footer class="footer">© 2025 My Recipe Book</footer>
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard — My Recipe Book</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="page-dashboard">
+  <header class="site-header">
+    <div class="brand">🍲 <span>My Recipe Book</span></div>
+    <div class="header-right">Welcome — <span id="userDisplay">Guest</span></div>
+  </header>
+
+  <main class="container dashboard-grid">
+    <div class="search-row">
+      <input id="search" class="search-input" placeholder="Search recipes, ingredients...">
+    </div>
+
+    <section>
+      <h3 class="section-title">Top Viewed Recipes</h3>
+      <div id="recipeList" class="recipes-grid"></div>
+    </section>
+
+    <aside class="sidebar">
+      <button class="side-btn" onclick="location.href='/addRecipe.html'">➕ Add Recipe</button>
+      <button class="side-btn" onclick="location.href='/viewAll.html'">📜 View All</button>
+      <button class="side-btn" onclick="location.href='/profile.html'">👤 Profile</button>
+      <button class="side-btn" onclick="location.href='/'">🚪 Logout</button>
+    </aside>
+  </main>
+
+  <footer class="footer">© 2025 My Recipe Book</footer>
+  <script src="/script.js"></script>
+</body>
+</html>
